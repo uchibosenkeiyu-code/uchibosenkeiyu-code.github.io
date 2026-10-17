@@ -1,0 +1,7 @@
+# app-ads.txt for SNSDetox (iOS Bundle ID: com.uchibosenkeiyu.SNSDetox)
+# Hosted at https://uchibosenkeiyu-code.github.io/app-ads.txt
+# Reference: https://support.google.com/admob/answer/9363762
+#
+# Google AdMob Authorized Digital Sellers
+# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Note: Google AdMob Publisher ID will be set upon production account confirmation

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート・よくある質問 - SNS依存脱却</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --primary-color: #4f46e5;
+            --muted-text: #64748b;
+            --table-border: #cbd5e1;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f8fafc;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+                --primary-color: #818cf8;
+                --muted-text: #94a3b8;
+                --table-border: #475569;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        .meta {
+            font-size: 0.875rem;
+            color: var(--muted-text);
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-q {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-color);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: baseline;
+        }
+        .faq-q::before {
+            content: "Q.";
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-right: 8px;
+        }
+        .faq-a {
+            padding-left: 28px;
+            font-size: 0.95rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.875rem;
+        }
+        th, td {
+            border: 1px solid var(--table-border);
+            padding: 10px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(125, 125, 125, 0.08);
+        }
+        .contact-box {
+            background-color: rgba(79, 70, 229, 0.06);
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="margin-bottom: 24px; font-size: 0.9rem;">
+            <a href="index.html" style="color: var(--primary-color); text-decoration: none;">&larr; ホームへ戻る</a> |
+            <a href="support.html" style="color: var(--primary-color); text-decoration: none;">サポート・よくある質問</a> |
+            <a href="privacy.html" style="color: var(--primary-color); text-decoration: none;">プライバシーポリシー</a>
+        </div>
+        <h1>サポート情報・よくあるご質問 (FAQ)</h1>
+        <div class="meta">
+            更新日：2026年10月17日 | 対象バージョン：1.0.0
+        </div>
+
+        <p>iOSアプリ『SNS依存脱却』をご利用いただきありがとうございます。本アプリに関するよくあるご質問やトラブルシューティング、お問い合わせ窓口をご案内いたします。</p>
+
+        <h2>1. よくあるご質問 (FAQ)</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">スクリーンタイムのアクセス許可ダイアログで「許可しない」を押してしまいました。</div>
+            <div class="faq-a">
+                <p>iPhoneの「設定」アプリ、または本アプリの「設定」タブからいつでも再許可が可能です。</p>
+                <ol>
+                    <li>本アプリの「設定」タブを開きます。</li>
+                    <li>「アクセス状況」が「拒否 / 取消」になっている場合、「利用データのアクセスを許可」をタップして再度許可を行ってください。</li>
+                    <li>または、iPhoneの「設定 ＞ スクリーンタイム」にて本アプリへのアクセス権限が有効になっていることをご確認ください。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">SNSを使ったのに利用時間が反映されません（「—」や未取得と表示される）。</div>
+            <div class="faq-a">
+                <ol>
+                    <li><strong>計測対象アプリの選択：</strong>「設定」タブの「計測対象SNS」が「選択済み」になっているか確認してください。「未選択」の場合は「計測対象アプリを選択・変更」から監視したいアプリを選択してください。</li>
+                    <li><strong>OSの集計遅延：</strong>AppleのScreen Time機能はiOSシステム側で一定間隔で集計・更新されるため、SNSアプリを閉じた直後などは数分〜十数分の反映タイムラグが生じる場合があります。しばらく時間をおいてから再度ご確認ください。</li>
+                    <li><strong>Webドメインの選択：</strong>Webサイト（ブラウザでの閲覧）を選択している場合、正確な合算対象外となるため、アプリまたはカテゴリのみを選択してください。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">目標時間を変更したのに、今日の目標にすぐ反映されません。</div>
+            <div class="faq-a">
+                <p>本アプリの目標設定は<strong>「次の暦日（翌日 0:00）」から適用</strong>される仕様となっています。</p>
+                <p>これは、過去の実績や当日の達成判定を遡って都合よく改変することを防ぎ、誠実に日々の習慣化へ取り組んでいただくための設計です。「設定」タブの「1日の利用目標」にて、明日以降の変更予定時間が表示されていることをご確認ください。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">課金やサブスクリプション、Pro版はありますか？</div>
+            <div class="faq-a">
+                <p><strong>一切ありません。</strong> 本アプリはすべての機能を完全無料で提供しています。アプリ内課金、定期購読、有料プランによる機能制限などは一切存在しません。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">表示される「依存度（全14段階）」とは何ですか？</div>
+            <div class="faq-a">
+                <p>選択されたSNSアプリの1日の利用時間に基づき、客観的な目安として1〜14の独自レベルで算出したものです。</p>
+                <ul>
+                    <li>レベル1（15分未満）〜 レベル14（18時間以上）まで細分化されています。</li>
+                    <li>※本指標は習慣改善の目安であり、医学的・精神医学的な診断や治療を目的としたものではありません。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">機種変更や端末初期化時のデータ引き継ぎはどうなりますか？</div>
+            <div class="faq-a">
+                <p>本アプリは利用者のプライバシー保護のため、個人利用時間や利用ログを外部サーバーに一切保存していません。</p>
+                <p>新しい端末への移行時は、再度「設定」タブからスクリーンタイムのアクセス許可と計測対象アプリの選択を行ってください。</p>
+            </div>
+        </div>
+
+        <h2>2. トラブルシューティング</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>現象</th>
+                    <th>主な原因</th>
+                    <th>対処方法</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>アプリが起動しない / 強制終了する</td>
+                    <td>サポート外OSまたは一時的なメモリ不足</td>
+                    <td>iOS 17.0以降にアップデートされているか確認し、端末の再起動をお試しください。</td>
+                </tr>
+                <tr>
+                    <td>広告が表示されない</td>
+                    <td>オフラインまたは広告の在庫状況</td>
+                    <td>本アプリは広告が表示されない場合でも全機能を制限なく利用できます。通信環境をご確認ください。</td>
+                </tr>
+                <tr>
+                    <td>共有画像が保存できない</td>
+                    <td>写真へのアクセス権限</td>
+                    <td>iOSの「設定 ＞ プライバシーとセキュリティ ＞ 写真」で本アプリへの写真追加を許可してください。</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. お問い合わせ窓口</h2>
+        <div class="contact-box">
+            <p>上記FAQで解決しない不具合やご意見がございましたら、以下の窓口までお問い合わせください。</p>
+            <ul>
+                <li><strong>サポート受付窓口：</strong><code>[要設定：公開サポート用Webフォームまたはメールアドレス]</code></li>
+            </ul>
+            <p><strong>お問い合わせ時のお願い：</strong><br>
+            不具合をご報告いただく際は、以下の情報を添えていただけますとスムーズな調査・対応が可能です。</p>
+            <ol>
+                <li>ご利用の端末モデル（例：iPhone 15 Pro）</li>
+                <li>iOSのバージョン（例：iOS 17.5.1）</li>
+                <li>アプリのバージョン（「設定」タブまたはApp Storeで確認可能、例：1.0.0）</li>
+                <li>発生した現象の詳細（表示されている画面、操作手順、エラーメッセージ等）</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 uchibosenkeiyu. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html" style="color: var(--primary-color); text-decoration: none; margin: 0 8px;">ホーム</a> |
+                <a href="privacy.html" style="color: var(--primary-color); text-decoration: none; margin: 0 8px;">プライバシーポリシー</a> |
+                <a href="support.html" style="color: var(--primary-color); text-decoration: none; margin: 0 8px;">サポート・FAQ</a> |
+                <a href="app-ads.txt" style="color: var(--primary-color); text-decoration: none; margin: 0 8px;">app-ads.txt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
