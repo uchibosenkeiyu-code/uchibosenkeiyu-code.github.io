@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNS依存脱却 - 公式サイト・サポート</title>
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        .container { min-width: 0; overflow-wrap: anywhere; }
+
         :root {
             --bg-color: #f8fafc;
             --text-color: #0f172a;
@@ -128,6 +131,11 @@
         footer a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 480px) {
+            .container { padding: 24px 20px; }
+            .nav-grid { grid-template-columns: minmax(0, 1fr); }
+            th, td { padding: 8px; }
+        }
     </style>
 </head>
 <body>
@@ -139,17 +147,21 @@
 
         <div class="intro">
             <p>『SNS依存脱却』（英名: SNSDetox）は、ついつい開きすぎてしまうSNSの利用時間を客観的に把握し、無理のないデジタルデトックスと習慣化をサポートする個人向けiOSアプリです。</p>
-            <p>Appleの Screen Time（Family Controls / Device Activity）フレームワークを活用し、利用時間やアプリ選択情報はすべて端末内のセキュアなサンドボックスで完結。外部サーバーや第三者へのデータ送信は一切行いません。</p>
+            <p>AppleのScreen Time（Family Controls / DeviceActivity）を利用し、選択したSNSの利用時間を端末内で表示します。利用時間、アプリ選択、目標、依存度、称号を広告SDKや外部解析・外部AIへ送る処理はありません。広告SDKが扱う端末・広告操作・診断等の情報は、プライバシーポリシーをご確認ください。</p>
         </div>
 
         <div class="app-features">
             <h3>主な特徴と基本方針</h3>
             <ul>
                 <li><strong>完全無料</strong>：アプリ内課金、有料サブスクリプション、Pro版等は一切ありません。すべての機能を完全無料でご利用いただけます。</li>
-                <li><strong>プライバシー保護</strong>：Screen Time利用データはオンデバイス完結。個人の実利用データが外部送信されることはありません。</li>
+                <li><strong>利用時間と目標</strong>：今日の利用時間、翌日から適用する目標、連続達成を確認できます。未取得データを0分として扱いません。</li>
+                <li><strong>振り返り</strong>：依存度Lv0〜100は昨日まで最大30暦日の確認できた完了日平均に基づく独自の目安です。全体／アプリ別、7日／30日の分析に対応します。医学的な診断ではありません。</li>
+                <li><strong>データの扱い</strong>：利用実績は端末内で処理します。個人の実利用データを含む画像保存・外部共有は、Appleの技術・規約確認が完了するまで無効です。</li>
                 <li><strong>控えめな広告配置</strong>：収益化は分析タブ「取り組み」末尾のバナー広告1枠のみ。全画面ポップアップや動画強制視聴はありません。</li>
             </ul>
         </div>
+
+        <p>iOS 17.0以降とScreen Time認可が必要です。アプリUIは日本語です。現在は公開前の準備段階で、テスト広告のみ有効です。</p>
 
         <div class="nav-grid">
             <a href="privacy.html" class="nav-card">
