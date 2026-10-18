@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="お薬リマインダーの端末内データ、通知・AlarmKit、Google AdMob広告と同意、任意のお問い合わせ情報の取扱方針。">
+  <title>プライバシーポリシー｜お薬リマインダー</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://uchibosenkeiyu-code.github.io/medication-reminder/privacy.html">
+</head>
+<body>
+<main>
+  <nav aria-label="ページ案内">
+    <a href="./">サポート・FAQ</a>
+    <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+    <a href="./#contact">お問い合わせ</a>
+  </nav>
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">対象：iPhoneアプリ「お薬リマインダー」<br>制定・最終更新日：2026年10月19日</p>
+  </header>
+  <p>uchibosenkeiyu（以下「開発者」）は、「お薬リマインダー」で扱う情報を、次の方針で取り扱います。</p>
+  <div class="summary">
+    <p><strong>薬の登録内容は端末内で扱います。</strong>アカウント登録や開発者サーバーへの保存はありません。広告の通信と、利用者が任意に送るお問い合わせは、薬の登録・通知とは別の処理です。</p>
+  </div>
+
+  <h2>1. 薬の登録内容と通知</h2>
+  <p>薬の名前、毎日の時刻、知らせ方と予約を管理するための情報を、iPhone内のアプリ領域に保存します。Widgetを利用する場合は、同じアプリのApp Group領域を通じて表示用データを共有します。</p>
+  <p>「通知だけ（音なし）」はiOSのローカル通知、「アラーム」はiOS 26以降のAlarmKitを使ってOSに予約します。開発者がサーバーから通知を送る方式ではありません。薬名・時刻・入力内容・健康情報を開発者サーバーへ送信したり、広告のパラメータ、ターゲティング、ユーザー属性として広告SDKへ渡したりしません。</p>
+  <p>通知やアラームの許可は、選んだ知らせ方に必要な場合に確認します。許可はiPhoneの設定から変更できます。端末のバックアップにアプリのデータが含まれる場合は、利用者のAppleの設定と利用条件に従います。開発者による独自のクラウド同期はありません。</p>
+
+  <h2>2. 広告と外部SDK</h2>
+  <p>無料運営のため、ホーム内にバナー広告1枠を表示します。通知、Widget、追加・編集フォーム、時刻入力に広告は表示しません。広告を見たりクリックしたりすることを、登録や通知の利用条件にはしません。</p>
+  <p>広告にはGoogle AdMobのGoogle Mobile Ads SDK 13.11.0、同意の管理にはGoogle User Messaging Platform（UMP）SDK 3.1.0を使用します。非パーソナライズ広告を要求し、Publisher first-party IDを無効にします。本アプリからApp Tracking Transparency（ATT）の追跡許可を要求する処理は行いません。</p>
+  <p><strong>非パーソナライズ設定でも、広告の通信やデータ収集がなくなるわけではありません。</strong>Googleの開示によると、広告SDKは次の情報を収集・送信し、Googleや広告配信に関わる事業者が処理する場合があります。</p>
+  <ul>
+    <li>IPアドレスと、それから推定されるおおよその位置。</li>
+    <li>アプリ・開発者の範囲などで用いられる端末識別子。IDFAの利用にはAppleの許可要件が適用されます。</li>
+    <li>表示された広告や、その表示・タップなどの広告関連情報と操作情報。</li>
+    <li>クラッシュログ、起動時間、応答停止率、消費電力などの診断・性能情報。</li>
+  </ul>
+  <p>これらは広告の配信・測定、広告機能の改善、不正行為への対策などに使用される場合があります。非パーソナライズ広告は過去の行動に基づく広告選択を行わず、おおよその現在地などの情報を利用する場合があります。本アプリは位置情報の取得許可を求めてGPSの正確な位置を広告へ渡すことはありません。</p>
+  <p>Google等による処理、保存期間、国外での処理、利用者の選択については、以下の公式資料もご確認ください。</p>
+  <ul>
+    <li><a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのデータ開示</a></li>
+    <li><a href="https://support.google.com/admob/answer/7676680?hl=ja">非パーソナライズ広告について</a></li>
+    <li><a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a></li>
+    <li><a href="https://policies.google.com/technologies/ads?hl=ja">Googleの広告に関する方針</a></li>
+  </ul>
+
+  <h2>3. 広告に関する同意と選択</h2>
+  <p>地域や法令上必要な場合は、Google UMPによる同意画面を表示します。再選択が必要な場合は、アプリに表示される広告のプライバシー設定から選択を確認・変更できます。広告を要求できる同意状態にない場合や、通信・広告の読み込みに失敗した場合でも、薬の登録・保存・通知・アラームの機能は利用できます。</p>
+
+  <h2>4. データの削除</h2>
+  <p>ホームの薬を開き、「この薬を削除」から削除すると、その薬の保存データと対応する通知・アラーム予約を解除します。他の薬のデータは残ります。端末内のアプリデータやAppleのバックアップの管理については、iPhoneとAppleの設定をご確認ください。</p>
+  <p>広告SDKが外部で処理したデータは、薬を削除する操作で開発者が一括削除できるものではありません。外部事業者側のデータに関する選択や請求については、上記Googleの方針をご確認ください。</p>
+
+  <section id="support-data" aria-labelledby="support-heading">
+    <h2 id="support-heading">5. 任意のお問い合わせ</h2>
+    <p>お問い合わせ窓口は、開発者が管理する公開リポジトリのGitHub Issuesです。GitHubアカウントが必要で、<strong>投稿本文・GitHubユーザー名・添付画像は公開されます。</strong>薬名・服用時刻・病名などの健康情報や、氏名・メールアドレスは記載せず、画像にも含めないでください。</p>
+    <p>利用者が任意に投稿した本文、添付画像、端末・OS・アプリのバージョンなどを、お問い合わせへの回答、不具合の調査・改善、広告の報告対応に必要な範囲で利用し、広告ターゲティングへ転用しません。アプリが薬の登録内容や診断ファイルを自動添付・自動送信することはありません。</p>
+    <p>お問い合わせの履歴は、対応の経緯としてGitHub上に保存されます。投稿した個人情報の削除を求める場合は、その情報を再掲載せず、同じ窓口で対象の投稿をお知らせください。GitHubが管理するログやバックアップ、第三者が取得した公開情報のコピーは、開発者だけでは削除できません。GitHub側の処理や利用者の権利については、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
+  </section>
+
+  <h2>6. このWebサイト</h2>
+  <p>このページには広告、外部アクセス解析タグ、送信フォームを設置していません。サイトはGitHub Pagesで配信しており、配信に伴うアクセス情報の取り扱いは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
+
+  <h2>7. 変更とお問い合わせ先</h2>
+  <p>機能、利用するSDK、情報の扱いを変更する場合は、このページを更新します。更新日はページ上部に記載します。</p>
+  <div class="contact">
+    <p>運営：uchibosenkeiyu</p>
+    <p><a href="https://github.com/uchibosenkeiyu-code/uchibosenkeiyu-code.github.io/issues/new?title=%5BMedicationReminder%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">GitHub Issuesでお問い合わせ</a>（投稿は公開されます）</p>
+    <p><a href="./#contact">サポートのご案内</a></p>
+  </div>
+  <footer>
+    <p>&copy; 2026 uchibosenkeiyu</p>
+    <a href="./">サポート・よくある質問</a>
+  </footer>
+</main>
+</body>
+</html>
